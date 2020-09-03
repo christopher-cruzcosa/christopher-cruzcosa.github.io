@@ -13,8 +13,9 @@ body {
     font-size: 18px;
     line-height: 150%;
     color: #333;
-    background: #efeee7;
+    background: whitesmoke;
   }
+  
   header {
     background: #333;
   }
@@ -33,22 +34,27 @@ body {
     color: #d21034;
   }
   .container {
-    width: 1024px;
+    width: 768px;
     margin: 0 auto;
   }
-  #main-bio,
+  
   #contact-info,
-  #bio-image {
+  #bio-image, #main-bio {
     float: left;
   }
   #main-bio {
-    width: 70%;
+    width: 100%;
   }
-  #contact-info {
-    width: 30%;
-  }
+
   #bio-image {
-    width: 200px;
-    height: 200px;
+    width: 392px;
+    height: 264px;
     margin-right: 20px;
+  }
+
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
   }
